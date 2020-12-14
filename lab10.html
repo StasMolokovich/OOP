@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Задание номер 10 по JavaScript</title>
+</head>
+<body>
+    <script type='text/javascript'>
+	/*. Создайте код, который выводит все простые числа из интервала от 2 до 10.(
+Натуральное число, большее 1, называется простым, если оно ни на что не
+делится, кроме себя и 1)*/
+     var numb = 10;
+     var ProstChisla = []
+     var Prost= true;
+
+     for (var i = 2; i <=numb; i++) {
+	 Prost = true;
+	 for (var j = 2; j < i; j++){
+		if (i % j == 0) {
+			Prost = false;
+		}
+	}
+	if (Prost) {
+		ProstChisla.push(i);
+	}
+}
+
+alert(ProstChisla)   
+    </script>
+</body>
+</html>

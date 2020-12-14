@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Задание номер 9 по JavaScript</title>
+</head>
+<body>
+    <script type='text/javascript'>
+	/*Написать скрипт, определяющий текущее время и вычисляющий время завтрака
+(7 00 -8 00 ), обеда (13 00 -14 00 ), ужина (19 00 -20 00 ), работы (9 00 -18 00 ), отдыха
+(18 00 -23 00 ), сна (23 00 -6 30 ).*/
+        let date = new Date(); 
+        let hours = date.getHours();
+        let minutes = date.getMinutes();
+        let time = hours + minutes/60;
+        if (hours >= 7 && hours<8) {
+            alert("Пора завтракать!");
+        }
+        if(hours>=13 && hours<14) {
+            alert("Обеденный перерыв!");
+        }
+        if(hours>=19 && hours<20) {
+            alert("Время ужина!");
+        }
+        if(hours>=9 && hours<18) {
+            alert("Работаем!");
+        }
+        if(hours>=18 && hours<23) {
+            alert("Самое время отдохнуть!");
+        }
+        if(hours>=23 && time<6.5) {
+            alert("Отдых!");
+        }
+    </script>
+</body>
+</html>

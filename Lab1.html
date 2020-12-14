@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8" />
+		<title>Задание номер 1 по JavaScript</title>
+    </head>
+<body>
+<script type="text/javascript">
+/*Вычислить значение выражения по формуле (все
+    переменные принимают вещественные значения):
+   (x**2 - 7*x + 10)/(x**2 - 8*x + 12)*/
+var x;
+var znam;
+var result;
+x=prompt("Введите значение х:");
+znam=(x**2 - 8*x + 12);
+result=(x**2 - 7*x + 10)/(x**2 - 8*x + 12);
+if(znam!=0){
+alert('Результат вычисления выражения:\n(x^2 - 7*x + 10)/(x^2 - 8*x + 12)=' + result);
+}
+else { 
+alert('Знаминатель выражения равен 0, а на ноль делить нельзя!!!');
+}
+</script>
+</body>
+</html>

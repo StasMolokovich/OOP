@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Задание номер 5 по JavaScript</title>
+</head>
+<body>
+    <script type='text/javascript'>
+	/*Даны два вещественных положительных числа х и у. арифметические действия над
+ними пронумерованы (сложение – 1, вычитание – 2, умножение – 3, деление - 4).
+Составить программу, которая по введённому номеру выполняет то или иное
+действие над числами.*/
+    let x = parseFloat(prompt("Введите значение числа x"));
+    let y = parseFloat(prompt("Введите значение числа y"));
+    let deystvie = parseInt(prompt("Выберите номер действия:\n 1. Cложение(x+y)\n 2. Вычитание(x-y)\n 3. Умножение(x*y)\n 4. Деление(x/y)"));
+    let result = 0;
+    switch (deystvie) {
+        case 1:
+        result = x + y;
+        alert("Результат  равен: " + result);
+        break;
+        case 2:
+        result = x - y;
+        alert("Результат равен: " + result);
+        break;
+        case 3:
+        result = x * y;
+        alert("Результат равен: " + result);
+        break;
+        case 4:
+        result = x / y;
+        alert("Результат равен: " + result);
+        break;
+        default:
+        alert("Действие выбрано неккоректно!");
+        break;
+    }  
+    </script>
+</body>
+</html>

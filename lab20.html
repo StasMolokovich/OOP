@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Задание номер 20 по JavaScript</title>
+</head>
+<body>
+    <script type='text/javascript'>
+	/*Создать массив из n (входное значение) элементов, автоматически заполнить его
+случайными числами от 0 до 10 и вывести массив и сумму его элементов.*/
+    let n = prompt("Введите n");
+        let arr = [];
+        function getRandomInt(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+        for (let i = 0; i <= n; i++) {
+            let x = getRandomInt(0, 10);
+            arr.push(x);
+        }
+    alert(arr);   
+    </script>
+</body>
+</html>

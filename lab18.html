@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Задание номер 18 по JavaScript</title>
+</head>
+<body>
+    <script type='text/javascript'>
+	/*Вывести ряд чисел Фибоначчи, состоящий из n элементов. (Числа Фибоначчи – это
+элементы числовой последовательности 0, 1, 1, 2, 3, 5, 8, 13, 21, 34…, в которой
+каждое последующее число равно сумме двух предыдущих)*/
+        let n = parseInt(prompt("Введите n"));
+        let arr = [0, 1, 1];
+        let l = 0;
+        let i = 3;
+        while (l < n) {
+            l = arr.length;
+            arr.push(arr[i - 2] + arr[i - 1]);
+            i = arr.length;
+            alert(arr);
+        }
+    </script>
+</body>
+</html>

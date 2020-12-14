@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Задание номер 19 по JavaScript</title>
+</head>
+<body>
+    <script type='text/javascript'>
+	/*Написать скрипт, который оставляет в строке только один экземпляр каждого
+встречающегося символа.*/
+        var str = prompt("Введите строку");
+        var set = new Set();
+        for (var s in str) {
+        set.add(str[s]);
+        }
+        arr = Array.from(set);
+        arr = arr.join("");
+    alert(arr);
+    </script>
+</body>
+</html>

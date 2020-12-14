@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Задание номер 8 по JavaScript</title>
+</head>
+<body>
+    <script type='text/javascript'>
+	/*Дана последовательность слов. Напечатать все слова, предварительно выполнив
+преобразования по правилу: заменить в каждом слове первую встречную букву а
+буквой о, удалив все остальные (если в слове нет такой буквы, то ничего не делать).*/
+        var s = prompt("Введите слова через пробел:");
+        s = s.split(' ');
+        for (var i=0; i<s.length; i++){
+	    s[i] = s[i].replace('a','o');
+	    while (s[i].indexOf('a') != -1){
+		s[i] = s[i].replace('a', '');
+	}
+	}
+        alert(s);
+    </script>
+</body>
+</html>

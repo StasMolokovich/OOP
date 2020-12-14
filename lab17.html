@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Задание номер 17 по JavaScript</title>
+</head>
+<body>
+    <script type='text/javascript'>
+	/*. Посчитайте площадь треугольника по:
+ длинам трех сторон;
+ трем углам и стороне;
+ двум сторонам и углу между ними;
+ двум сторонам и необразованному ими углу;
+ высоте треугольника и стороне к которой опущена эта высота;
+ трем углам и стороне.*/
+    var n = parseInt(prompt('Нахождение площади по: \nДлине трёх сторон – 1 \nТрем углам и стороне – 2 \nДвум сторонам и углу между ними – 3 \nДвум сторонам и необразованному ими углу - 4 \nВысоте треугольника и стороне, к которой опущена эта высота - 5 \nТрем углам и стороне - 6 '));
+        switch (n) {
+    case 1: 
+          var x1 = parseInt(prompt('Введите 1 сторону:'));
+          var x2 = parseInt(prompt('Введите 2 сторону:'));
+          var x3 = parseInt(prompt('Введите 3 сторону:'));
+          var p = (x1+x2+x3)/2;
+    alert((Math.sqrt(p*(p-x1)*(p-x2)*(p-x3))).toFixed(3)); break;
+    case 2:
+          var y1 = parseInt(prompt('Введите 1 угол'));
+          var y2 = parseInt(prompt('Введите 2 угол'));
+          var y3 = parseInt(prompt('Введите 3 угол'));
+          var x1 = parseInt(prompt('Введите сторону'));
+           alert((((x1*x1)*Math.sin(y1)*Math.sin(y2))/(2*Math.sin(y3))).toFixed(3)); break;
+    case 3:
+          var x1 = parseInt(prompt('Введите 1 сторону'));
+          var x2 = parseInt(prompt('Введите 2 сторону'));
+          var y1 = parseInt(prompt('Введите угол'));
+     alert(Math.ceil(0.5*x1*x2*Math.sin( y1*Math.PI /180))); break;
+    case 4:
+          var x1 = parseInt(prompt('Введите 1 сторону'));
+          var x2 = parseInt(prompt('Введите 2 сторону'));
+          var y1 = parseInt(prompt('Введите 1 угол'));
+          var b = Math.asin(x1 / x2 * Math.sin(y1 * Math.PI / 180));
+          var s = (0.5 * x1 * x2 * Math.sin((180 - y1 - b) * Math.PI / 180));
+     alert(s); break;
+    case 5:
+          var h = parseInt(prompt('Введите высоту'));
+          var x1 = parseInt(prompt('Введите сторону'));
+     alert(0.5*h*x1); break;
+    case 6:
+          var x3 = parseInt(prompt('Введите сторону'));
+          var y1 = parseInt(prompt('Введите 1 угол'));
+          var y2 = parseInt(prompt('Введите 2 угол'));
+          var y3 = parseInt(prompt('Введите 3 угол'));
+     alert(); break;
+    default: alert("Введено неверное значение!");
+}    
+    </script>
+</body>
+</html>

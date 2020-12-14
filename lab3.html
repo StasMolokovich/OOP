@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Задание номер 3 по JavaScript</title>
+</head>
+<body>
+    <script type='text/javascript'>
+		/*Посчитать количество согласных и гласных в Вашей фамилии.*/
+    let a = "аАеЕуУюЮэЭяЯыЫиИоО";
+    let s = prompt("Введите вашу фамилию");
+    let n = s.length;
+    let counter = 0;
+    alert("Ваша фамилия - " + s + "; в ней букв - " + n);
+    let arr = a.split("");
+    let str = s.split("");
+    for (let i in str) {
+        for (let j in arr) {
+            if (str[i] == arr[j]) {
+                counter = counter + 1;
+            }
+        }
+    }
+    alert("В вашей фамилии " + counter + " гласных и " + (n - counter) + " согласных");
+    </script>
+</body>
+</html>
