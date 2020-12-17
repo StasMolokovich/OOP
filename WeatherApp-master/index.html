@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Weather Gomel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css"/>
+</head>
+
+<body>
+<div id="app">
+    <div id="weather">
+        {{overcast}}
+        <span class="temperature">{{currentTemp}}°</span><br>
+        <span id="temp-values">Min {{minTemp}}° <br> Max {{maxTemp}}°</span>
+    </div>
+    <div id="info">
+        <img class="icon" src="images/sunrise.svg" alt=""> {{sunrise}}
+        <img class="icon" src="images/sunset.svg" alt=""> {{sunset}}
+        <img class="icon" src="images/humidity.svg" alt=""> {{humidity}}
+        <img class="icon" src="images/pressure.svg" alt=""> {{pressure}}
+        <img class="icon" src="images/wind.svg" alt=""> {{wind}}
+    </div>
+</div>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
