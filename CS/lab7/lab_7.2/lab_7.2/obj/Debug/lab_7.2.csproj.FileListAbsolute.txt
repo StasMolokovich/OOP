@@ -1,0 +1,11 @@
+C:\Users\bot32\source\repos\lab7\lab_7.2\lab_7.2\bin\Debug\lab_7.2.exe.config
+C:\Users\bot32\source\repos\lab7\lab_7.2\lab_7.2\bin\Debug\lab_7.2.exe
+C:\Users\bot32\source\repos\lab7\lab_7.2\lab_7.2\bin\Debug\lab_7.2.pdb
+C:\Users\bot32\source\repos\lab7\lab_7.2\lab_7.2\obj\Debug\lab_7.2.csprojAssemblyReference.cache
+C:\Users\bot32\source\repos\lab7\lab_7.2\lab_7.2\obj\Debug\lab_7._2.Form1.resources
+C:\Users\bot32\source\repos\lab7\lab_7.2\lab_7.2\obj\Debug\lab_7._2.Properties.Resources.resources
+C:\Users\bot32\source\repos\lab7\lab_7.2\lab_7.2\obj\Debug\lab_7.2.csproj.GenerateResource.cache
+C:\Users\bot32\source\repos\lab7\lab_7.2\lab_7.2\obj\Debug\lab_7.2.csproj.CoreCompileInputs.cache
+C:\Users\bot32\source\repos\lab7\lab_7.2\lab_7.2\obj\Debug\lab_7.2.exe
+C:\Users\bot32\source\repos\lab7\lab_7.2\lab_7.2\obj\Debug\lab_7.2.pdb
+C:\Users\bot32\source\repos\lab7\lab_7.2\lab_7.2\obj\Debug\lab_7._2.Form2.resources
